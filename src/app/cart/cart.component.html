@@ -1,0 +1,12 @@
+<p>cart works!</p>
+<table border=1>
+<tr border=1><p>{{item1}}<button (click)="addcartApple()">Add</button></p></tr>
+<tr border=1><p>{{item2}}<button (click)="addcartOrange()">Add</button></p></tr>
+</table>
+
+<h2>Your cart has:</h2>
+
+<p *ngFor = "let x of fruitsArray">{{ x.name }} {{x.count}}</p>
+
+<P><button (click)="DeleteApple()">Delete Apple</button></P>
+<p><button (click)="DeleteOrange()">Delete Orange</button></p>
